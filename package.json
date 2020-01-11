@@ -1,0 +1,17 @@
+{
+  "name": "style-functions",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "parcel build lib/index.js --target node",
+    "start": "jest --watchAll --watchman --forceExit --detectOpenHandles --notify --notifyMode=failure"
+  },
+  "author": "Apostolos Christodouloud <me@tol.is>",
+  "license": "MIT",
+  "devDependencies": {
+    "github-release-from-changelog": "^2.1.0",
+    "jest": "^24.9.0",
+    "parcel": "^1.12.4"
+  }
+}
