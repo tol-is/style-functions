@@ -1,9 +1,10 @@
 {
   "name": "style-functions",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
+    "release": "f(){ release-it $1 && github-release-from-changelog ;};f",
     "build": "parcel build lib/index.js --target node",
     "start": "jest --watchAll --watchman --forceExit --detectOpenHandles --notify --notifyMode=failure"
   },
@@ -11,6 +12,7 @@
   "license": "MIT",
   "devDependencies": {
     "github-release-from-changelog": "^2.1.0",
+    "release-it": "^12.3.6",
     "jest": "^24.9.0",
     "parcel": "^1.12.4"
   }
