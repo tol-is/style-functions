@@ -4,8 +4,8 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "release": "f(){ release-it $1 && github-release-from-changelog ;};f",
     "build": "parcel build lib/index.js --target node",
+    "prepublish": "npm run build",
     "start": "jest --watchAll --watchman --forceExit --detectOpenHandles --notify --notifyMode=failure"
   },
   "author": "Apostolos Christodouloud <me@tol.is>",

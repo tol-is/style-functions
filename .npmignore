@@ -60,14 +60,9 @@ typings/
 # dotenv environment variables file
 .env
 
-# dist
-**/dist/
-**/**/dist/
-
 # gatsby
 **/**/public
 **/**/.cache
-
 
 # flow-typed
 flow-typed/npm
@@ -83,4 +78,3 @@ package-lock.json
 
 # Cache files
 .cache
-.cache/**
